@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Neem contact op met Stichting Al-Wahhaab in Breda. Vragen over donaties, samenwerking of vrijwilligerswerk? Mail, WhatsApp of gebruik het contactformulier.">
+  <title>Contact | Stichting Al-Wahhaab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="logo" aria-label="Stichting Al-Wahhaab — naar home">
+        <span class="logo__icon" aria-hidden="true">AW</span>
+        <span class="logo__text">
+          <span class="logo__name">Stichting Al-Wahhaab</span>
+          <span class="logo__tagline">Hulp waar het nodig is</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="nav" id="main-nav" aria-label="Hoofdnavigatie">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="over-ons.html" class="nav__link">Over Ons</a>
+        <a href="projecten.html" class="nav__link">Projecten</a>
+        <a href="doneren.html" class="nav__link nav__cta"><span class="btn btn--primary">Doneren</span></a>
+        <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>Heeft u een vraag over donaties, onze projecten, samenwerking of vrijwilligerswerk? Wij horen graag van u.</p>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="contact-layout">
+          <div>
+            <!--
+              FORMSPREE KOPPELEN:
+              1. Maak een formulier op https://formspree.io
+              2. Vervang action="#" door: action="https://formspree.io/f/JOUW_ID" method="POST"
+              3. Verwijder het onsubmit-attribuut hieronder
+            -->
+            <form
+              class="contact-form"
+              action="#"
+              method="POST"
+              onsubmit="event.preventDefault(); alert('Het formulier is nog niet gekoppeld. Stel Formspree in en pas het action-attribuut aan.');"
+              aria-labelledby="form-title"
+            >
+              <h2 id="form-title">Stuur ons een bericht</h2>
+              <p style="margin-bottom: 1.5rem;">Vul het formulier in en wij nemen zo snel mogelijk contact met u op.</p>
+
+              <div class="form-group">
+                <label for="naam">Naam <span aria-hidden="true">*</span></label>
+                <input type="text" id="naam" name="naam" required autocomplete="name" placeholder="Uw volledige naam">
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mailadres <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="uw@email.nl">
+              </div>
+
+              <div class="form-group">
+                <label for="telefoon">Telefoonnummer</label>
+                <input type="tel" id="telefoon" name="telefoon" autocomplete="tel" placeholder="06 12345678">
+              </div>
+
+              <div class="form-group">
+                <label for="onderwerp">Onderwerp <span aria-hidden="true">*</span></label>
+                <input type="text" id="onderwerp" name="onderwerp" required placeholder="Waar gaat uw bericht over?">
+              </div>
+
+              <div class="form-group">
+                <label for="bericht">Bericht <span aria-hidden="true">*</span></label>
+                <textarea id="bericht" name="bericht" required placeholder="Schrijf hier uw bericht..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary">Verstuur bericht</button>
+
+              <p class="form-note">Velden met * zijn verplicht. Na koppeling met Formspree worden berichten automatisch doorgestuurd naar uw e-mail.</p>
+            </form>
+          </div>
+
+          <aside class="contact-info">
+            <div class="contact-card">
+              <h3>Contactgegevens</h3>
+              <ul class="contact-list">
+                <li>
+                  <span aria-hidden="true">✉</span>
+                  <span><a href="mailto:info@al-wahhaab.nl">info@al-wahhaab.nl</a></span>
+                </li>
+                <li>
+                  <span aria-hidden="true">💬</span>
+                  <span><a href="https://wa.me/31619247052" target="_blank" rel="noopener noreferrer">WhatsApp: +31 6 19247052</a></span>
+                </li>
+                <li>
+                  <span aria-hidden="true">📍</span>
+                  <span>Breda, Nederland</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-card">
+              <h3>Volg ons</h3>
+              <div class="social-links">
+                <a href="https://www.instagram.com/stichting.alwahhaab?igsh=eHZibWZzYjQzam8w&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/share/18pHpDNqFq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <h3>Doneren</h3>
+              <p style="font-size: 0.9375rem; margin-bottom: 0.75rem;">Wilt u direct bijdragen? Bekijk onze donatiepagina voor het rekeningnummer.</p>
+              <a href="doneren.html" class="btn btn--primary">Naar doneren</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: white;">
+            <span class="logo__icon" aria-hidden="true">AW</span>
+            <span class="logo__text">
+              <span class="logo__name" style="color: white;">Stichting Al-Wahhaab</span>
+            </span>
+          </a>
+          <p>Wij zetten ons in voor basisbehoeften in Afrika, met name Marokko, en faciliteren in Nederland een plek voor jong en oud.</p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Pagina's</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="over-ons.html">Over Ons</a></li>
+            <li><a href="projecten.html">Projecten</a></li>
+            <li><a href="doneren.html">Doneren</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Contact</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:info@al-wahhaab.nl">info@al-wahhaab.nl</a></li>
+            <li><a href="https://wa.me/31619247052" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li>Breda, Nederland</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Gegevens</h3>
+          <ul class="footer-links">
+            <li>IBAN: NL20INGB0006898882</li>
+            <li>KVK: 82257426</li>
+            <li>RSIN: 862397868</li>
+            <li><a href="https://www.instagram.com/stichting.alwahhaab" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.facebook.com/share/18pHpDNqFq/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Stichting Al-Wahhaab. Alle rechten voorbehouden.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="js/script.js"></script>
+</body>
+</html>
