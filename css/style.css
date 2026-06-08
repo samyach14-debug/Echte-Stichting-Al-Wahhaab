@@ -281,6 +281,14 @@ p:last-child {
   font-weight: 500;
 }
 
+.logo__image {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+  border-radius: 50%;
+}
+
 /* Navigation */
 .nav {
   display: flex;
