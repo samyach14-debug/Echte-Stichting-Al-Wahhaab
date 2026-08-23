@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bekijk de projecten van Stichting Al-Wahhaab: voedselpakketten, water, medische hulp, onderwijs, activiteiten in Nederland en Ramadan- en Eid-acties.">
+  <meta name="description" content="Bekijk de projecten van Stichting Al-Wahhaab: voedselpakketten, hulpverlening, medische hulp, activiteiten in Nederland en Ramadan- en Eid-acties.">
   <title>Projecten | Stichting Al-Wahhaab</title>
+  <link rel="icon" href="Images/logo.jpg" type="image/jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,10 +15,7 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a href="index.html" class="logo" aria-label="Stichting Al-Wahhaab — naar home">
-<img class="logo__image" src="Images/logo.jpg" alt="Logo Stichting Al-Wahhaab">        <span class="logo__text">
-          <span class="logo__name">Stichting Al-Wahhaab</span>
-          <span class="logo__tagline">Hulp waar het nodig is</span>
-        </span>
+        <img class="logo__image" src="Images/logo.jpg" alt="Logo Stichting Al-Wahhaab">
       </a>
       <button class="nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="main-nav">
         <span class="nav-toggle__bar"></span>
@@ -42,79 +40,111 @@
       </div>
     </section>
 
-  <!--
-    PROJECTEN TOEVOEGEN OF AANPASSEN:
-    Kopieer een volledig <article class="project-card">-blok hieronder.
-    Pas id, titel, tekst en placeholder aan. Voeg eventueel een foto toe in project-card__image.
-  -->
+    <!--
+      PROJECT TOEVOEGEN:
+      Kopieer een volledig <article class="project-card">-blok hieronder.
+      Pas id, titel, tekst en afbeelding aan.
+    -->
     <section class="section section--white" aria-label="Projectoverzicht">
       <div class="container">
         <div class="projects-grid">
 
           <article class="project-card" id="voedselpakketten">
             <div class="project-card__image">
-              <div class="placeholder-img" role="img" aria-label="Afbeelding voedselpakketten project">Voedselpakketten</div>
+              <img src="Images/Voedselpakket.jpeg" alt="Voedselpakketten van Stichting Al-Wahhaab">
             </div>
             <div class="project-card__body">
               <h3>Voedselpakketten</h3>
               <p>Stichting Al-Wahhaab ondersteunt gezinnen en personen die voedselhulp nodig hebben, onder andere via voedselpakketten. Met uw steun kunnen wij basislevensmiddelen bereiken aan mensen die anders dagelijks tekortkomen.</p>
+              <a href="doneren.html" class="project-card__link">Steun dit project →</a>
+            </div>
+          </article>
+
+          <article class="project-card" id="hulpverlening">
+            <div class="project-card__image">
+              <img src="Images/Aflevering.jpeg" alt="Hulpverlening door Stichting Al-Wahhaab">
+            </div>
+            <div class="project-card__body">
+              <h3>Hulpverlening</h3>
+              <p>Wij bieden gerichte ondersteuning aan mensen die hulp nodig hebben. Via hulpacties en persoonlijke betrokkenheid proberen wij directe noden te verlichten.</p>
+              <a href="doneren.html" class="project-card__link">Steun dit project →</a>
+            </div>
+          </article>
+
+          <article class="project-card" id="hulptassen">
+            <div class="project-card__image">
+              <img src="Images/Hulptassen.jpeg" alt="Hulpactie met hulptassen van Stichting Al-Wahhaab">
+            </div>
+            <div class="project-card__body">
+              <h3>Hulptassen</h3>
+              <p>Met hulptassen voorzien wij mensen in essentiële benodigdheden. Een concrete manier om direct verschil te maken in het dagelijks leven van gezinnen.</p>
+              <a href="doneren.html" class="project-card__link">Steun dit project →</a>
             </div>
           </article>
 
           <article class="project-card" id="waterprojecten">
-            <div class="project-card__image">
-              <div class="placeholder-img" role="img" aria-label="Afbeelding waterprojecten">Waterprojecten</div>
+            <div class="project-card__image project-card__image--icon">
+              <div class="project-card__icon-wrap" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+              </div>
             </div>
             <div class="project-card__body">
               <h3>Waterprojecten</h3>
               <p>De stichting zet zich in voor toegang tot schoon water voor mensen die dit hard nodig hebben. Schoon drinkwater is een basisvoorwaarde voor gezondheid en waardig leven.</p>
+              <a href="doneren.html" class="project-card__link">Steun dit project →</a>
             </div>
           </article>
 
           <article class="project-card" id="medische-hulp">
             <div class="project-card__image">
-              <div class="placeholder-img" role="img" aria-label="Afbeelding medische hulp">Medische hulp</div>
+              <img src="Images/Psycholoog.jpeg" alt="Ondersteuning en medische hulp door Stichting Al-Wahhaab">
             </div>
             <div class="project-card__body">
-              <h3>Medische hulp</h3>
+              <h3>Medische hulp en ondersteuning</h3>
               <p>De stichting ondersteunt mensen bij noodzakelijke medische kosten, medicijnen en andere medische hulp. Wij willen voorkomen dat ziekte een onoverkomelijke drempel wordt.</p>
+              <a href="doneren.html" class="project-card__link">Steun dit project →</a>
             </div>
           </article>
 
           <article class="project-card" id="onderwijs-zelfredzaamheid">
-            <div class="project-card__image">
-              <div class="placeholder-img" role="img" aria-label="Afbeelding onderwijs en zelfredzaamheid">Onderwijs</div>
+            <div class="project-card__image project-card__image--icon">
+              <div class="project-card__icon-wrap" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15.75l3 3m0 0l3-3m-3 3V9"/></svg>
+              </div>
             </div>
             <div class="project-card__body">
               <h3>Onderwijs en zelfredzaamheid</h3>
               <p>De stichting wil bijdragen aan betere kansen door onderwijs en zelfredzaamheid te ondersteunen. Hulp die mensen op de lange termijn sterker maakt, staat bij ons centraal.</p>
+              <a href="doneren.html" class="project-card__link">Steun dit project →</a>
             </div>
           </article>
 
           <article class="project-card" id="activiteiten-nederland">
             <div class="project-card__image">
-              <div class="placeholder-img" role="img" aria-label="Afbeelding activiteiten in Nederland">Nederland</div>
+              <img src="Images/Lunchparty.jpeg" alt="Activiteiten en samenkomst in Nederland">
             </div>
             <div class="project-card__body">
               <h3>Activiteiten in Nederland</h3>
               <p>De stichting wil een plek faciliteren waar jong en oud samen kunnen komen en activiteiten kunnen ontplooien. Een ontmoetingsplek die verbinding en betrokkenheid stimuleert.</p>
+              <a href="contact.html" class="project-card__link">Neem contact op →</a>
             </div>
           </article>
 
           <article class="project-card" id="ramadan-eid">
             <div class="project-card__image">
-              <div class="placeholder-img" role="img" aria-label="Afbeelding Ramadan en Eid projecten">Ramadan &amp; Eid</div>
+              <img src="Images/Snoep.jpeg" alt="Ramadan- en Eid-actie van Stichting Al-Wahhaab">
             </div>
             <div class="project-card__body">
               <h3>Ramadan en Eid projecten</h3>
               <p>Tijdens bijzondere islamitische periodes organiseert de stichting acties zoals voedselpakketten, snoepacties en ondersteuning rondom Eid. Zo willen wij gezinnen een warme en waardige periode geven.</p>
+              <a href="doneren.html" class="project-card__link">Steun dit project →</a>
             </div>
           </article>
 
         </div>
 
         <p class="text-center" style="margin-top: 2.5rem;">
-          <a href="doneren.html" class="btn btn--primary">Steun een project</a>
+          <a href="doneren.html" class="btn btn--primary">Steun onze projecten</a>
         </p>
       </div>
     </section>
@@ -124,12 +154,11 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo" style="color: white;">
-<img class="logo__image" src="Images/logo.jpg" alt="Logo Stichting Al-Wahhaab">            <span class="logo__text">
-              <span class="logo__name" style="color: white;">Stichting Al-Wahhaab</span>
-            </span>
+          <a href="index.html" class="logo logo--footer">
+            <img class="logo__image logo__image--footer" src="Images/logo.jpg" alt="Logo Stichting Al-Wahhaab">
           </a>
           <p>Wij zetten ons in voor basisbehoeften in Afrika, met name Marokko, en faciliteren in Nederland een plek voor jong en oud.</p>
+          <p class="footer-location">Breda</p>
         </div>
         <div>
           <h3 class="footer-heading">Pagina's</h3>
@@ -145,8 +174,8 @@
           <h3 class="footer-heading">Contact</h3>
           <ul class="footer-links">
             <li><a href="mailto:info@al-wahhaab.nl">info@al-wahhaab.nl</a></li>
-            <li><a href="https://wa.me/31619247052" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-            <li>Breda, Nederland</li>
+            <li><a href="https://wa.me/31619247052" target="_blank" rel="noopener noreferrer">+31 6 19247052</a></li>
+            <li>Breda</li>
           </ul>
         </div>
         <div>
@@ -155,8 +184,8 @@
             <li>IBAN: NL20INGB0006898882</li>
             <li>KVK: 82257426</li>
             <li>RSIN: 862397868</li>
-            <li><a href="https://www.instagram.com/stichting.alwahhaab" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://www.facebook.com/share/18pHpDNqFq/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.instagram.com/stichting.alwahhaab?igsh=eHZibWZzYjQzam8w&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.facebook.com/share/18pHpDNqFq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a></li>
           </ul>
         </div>
       </div>

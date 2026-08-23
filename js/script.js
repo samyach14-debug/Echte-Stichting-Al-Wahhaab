@@ -34,4 +34,22 @@
     });
   }
 
+  const copyIbanBtn = document.querySelector(".copy-iban-btn");
+  if (copyIbanBtn) {
+    copyIbanBtn.addEventListener("click", function () {
+      const iban = this.getAttribute("data-iban");
+      if (!iban) return;
+
+      navigator.clipboard.writeText(iban).then(function () {
+        const original = copyIbanBtn.textContent;
+        copyIbanBtn.textContent = "IBAN gekopieerd!";
+        setTimeout(function () {
+          copyIbanBtn.textContent = original;
+        }, 2000);
+      }).catch(function () {
+        window.prompt("Kopieer het IBAN:", iban);
+      });
+    });
+  }
+
 })();

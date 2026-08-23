@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Doneer aan Stichting Al-Wahhaab. Uw gift ondersteunt voedsel, water, medicijnen en projecten in Marokko en Nederland. IBAN: NL20INGB0006898882.">
   <title>Doneren | Stichting Al-Wahhaab</title>
+  <link rel="icon" href="Images/logo.jpg" type="image/jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,10 +15,7 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a href="index.html" class="logo" aria-label="Stichting Al-Wahhaab — naar home">
-<img class="logo__image" src="Images/logo.jpg" alt="Logo Stichting Al-Wahhaab">        <span class="logo__text">
-          <span class="logo__name">Stichting Al-Wahhaab</span>
-          <span class="logo__tagline">Hulp waar het nodig is</span>
-        </span>
+        <img class="logo__image" src="Images/logo.jpg" alt="Logo Stichting Al-Wahhaab">
       </a>
       <button class="nav-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="main-nav">
         <span class="nav-toggle__bar"></span>
@@ -53,8 +51,13 @@
         <div class="donate-card" aria-labelledby="iban-title">
           <p class="donate-card__label">Bankoverschrijving</p>
           <h2 id="iban-title" class="sr-only">Bankgegevens</h2>
-          <p class="donate-card__iban">NL20INGB0006898882</p>
-          <p class="donate-card__name">Ten name van: Stichting Al-Wahhaab</p>
+          <p class="donate-card__name">Stichting Al-Wahhaab</p>
+          <p class="donate-card__iban" id="iban-number">NL20INGB0006898882</p>
+          <button type="button" class="btn btn--secondary btn--copy copy-iban-btn" data-iban="NL20INGB0006898882">Kopieer IBAN</button>
+          <div class="donate-card__meta">
+            <span>KVK: <strong>82257426</strong></span>
+            <span>RSIN: <strong>862397868</strong></span>
+          </div>
         </div>
 
         <p class="text-center lead" style="max-width: 560px; margin: 0 auto 2rem;">
@@ -103,10 +106,8 @@
             </ul>
             <p style="margin-top: 1.5rem;"><a href="projecten.html">Bekijk alle projecten →</a></p>
           </div>
-          <div>
-            <div class="placeholder-img" style="min-height: 280px; border-radius: 12px;" role="img" aria-label="Placeholder: impact van donaties">
-              Placeholder — impactfoto
-            </div>
+          <div class="content-image">
+            <img src="Images/Voedselpakket.jpeg" alt="Voedselpakketten van Stichting Al-Wahhaab">
           </div>
         </div>
       </div>
@@ -127,12 +128,11 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo" style="color: white;">
-<img class="logo__image" src="Images/logo.jpg" alt="Logo Stichting Al-Wahhaab">            <span class="logo__text">
-              <span class="logo__name" style="color: white;">Stichting Al-Wahhaab</span>
-            </span>
+          <a href="index.html" class="logo logo--footer">
+            <img class="logo__image logo__image--footer" src="Images/logo.jpg" alt="Logo Stichting Al-Wahhaab">
           </a>
           <p>Wij zetten ons in voor basisbehoeften in Afrika, met name Marokko, en faciliteren in Nederland een plek voor jong en oud.</p>
+          <p class="footer-location">Breda</p>
         </div>
         <div>
           <h3 class="footer-heading">Pagina's</h3>
@@ -148,8 +148,8 @@
           <h3 class="footer-heading">Contact</h3>
           <ul class="footer-links">
             <li><a href="mailto:info@al-wahhaab.nl">info@al-wahhaab.nl</a></li>
-            <li><a href="https://wa.me/31619247052" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-            <li>Breda, Nederland</li>
+            <li><a href="https://wa.me/31619247052" target="_blank" rel="noopener noreferrer">+31 6 19247052</a></li>
+            <li>Breda</li>
           </ul>
         </div>
         <div>
@@ -158,8 +158,8 @@
             <li>IBAN: NL20INGB0006898882</li>
             <li>KVK: 82257426</li>
             <li>RSIN: 862397868</li>
-            <li><a href="https://www.instagram.com/stichting.alwahhaab" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="https://www.facebook.com/share/18pHpDNqFq/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.instagram.com/stichting.alwahhaab?igsh=eHZibWZzYjQzam8w&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.facebook.com/share/18pHpDNqFq/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a></li>
           </ul>
         </div>
       </div>
