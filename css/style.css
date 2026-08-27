@@ -698,15 +698,25 @@ p:last-child {
 }
 
 /* Donate page */
+.donate-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 0 auto 2.5rem;
+  max-width: 720px;
+}
+
 .donate-card {
   background: var(--color-white);
-  border: 2px solid var(--color-primary);
-  border-radius: var(--radius-lg);
-  padding: 2.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.25rem;
   text-align: center;
-  max-width: 520px;
-  margin: 0 auto 2.5rem;
-  box-shadow: var(--shadow-md);
+  width: 100%;
+  max-width: 420px;
+  margin: 0;
+  box-shadow: var(--shadow-sm);
 }
 
 .donate-card__label {
@@ -719,7 +729,7 @@ p:last-child {
 }
 
 .donate-card__iban {
-  font-size: clamp(1.25rem, 4vw, 1.5rem);
+  font-size: clamp(1.0625rem, 3vw, 1.25rem);
   font-weight: 700;
   color: var(--color-primary-dark);
   letter-spacing: 0.02em;
@@ -728,10 +738,10 @@ p:last-child {
 }
 
 .donate-card__name {
-  font-size: 1.0625rem;
+  font-size: 1rem;
   color: var(--color-text);
   font-weight: 600;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .donate-card__meta {
@@ -792,23 +802,25 @@ p:last-child {
 
 .donate-online {
   background-color: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: 2rem;
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
   text-align: center;
-  margin: 2rem auto 0;
-  max-width: 28rem;
-  box-shadow: var(--shadow-sm);
+  margin: 0;
+  width: 100%;
+  max-width: 640px;
+  box-shadow: var(--shadow-md);
 }
 
 .donate-online h3 {
   color: var(--color-primary-dark);
   margin-bottom: 0.5rem;
+  font-size: 1.375rem;
 }
 
 .donate-online > p {
-  max-width: 420px;
-  margin: 0 auto 1.25rem;
+  max-width: 480px;
+  margin: 0 auto 1.5rem;
 }
 
 .donate-paypal {
@@ -818,7 +830,7 @@ p:last-child {
   justify-content: flex-start;
   gap: 0.75rem;
   width: 100%;
-  max-width: 28rem;
+  max-width: 100%;
   margin-inline: auto;
 }
 
@@ -827,14 +839,14 @@ p:last-child {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 16rem;
-  padding: 0.85rem 1.5rem;
+  max-width: 20rem;
+  padding: 1rem 1.75rem;
   border: 2px solid var(--color-primary);
   border-radius: var(--radius-sm);
   background-color: var(--color-primary);
   color: var(--color-white);
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   font-weight: 700;
   line-height: 1.25;
   cursor: pointer;
@@ -881,6 +893,31 @@ p:last-child {
   object-fit: contain;
   object-position: center;
   vertical-align: middle;
+}
+
+/* Privacy page */
+.privacy-content {
+  max-width: 720px;
+}
+
+.privacy-content h2 {
+  margin-top: 2rem;
+  color: var(--color-primary-dark);
+}
+
+.privacy-content h2:first-of-type {
+  margin-top: 1.5rem;
+}
+
+.privacy-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0 0 1rem;
+  color: var(--color-text-muted);
+}
+
+.privacy-list li {
+  margin-bottom: 0.35rem;
 }
 
 /* Contact */
