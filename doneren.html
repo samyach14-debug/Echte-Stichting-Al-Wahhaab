@@ -52,8 +52,23 @@
           <div class="donate-online" aria-labelledby="online-donate-title">
             <h3 id="online-donate-title">Online doneren</h3>
             <p>Doneer veilig via PayPal met Apple Pay, creditcard of PayPal-saldo. U wordt doorgestuurd naar de beveiligde betaalpagina van PayPal.</p>
-            <form class="donate-paypal" action="https://www.paypal.com/ncp/payment/HTABPS5Z7BDX2" method="post" target="_blank" rel="noopener noreferrer">
-              <button class="donate-paypal__submit" type="submit">Doneren via PayPal</button>
+            <form class="donate-paypal" action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="hosted_button_id" value="WNQMYKDCVWEUS">
+              <button
+                class="donate-paypal__submit"
+                type="submit"
+                name="submit"
+                title="PayPal - The safer, easier way to pay online!"
+              >
+                Doneren via PayPal
+              </button>
+              <img
+                class="donate-paypal__pixel"
+                alt=""
+                src="https://www.paypal.com/nl_NL/i/scr/pixel.gif"
+                width="1"
+                height="1"
+              >
               <img
                 class="donate-paypal__cards"
                 src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg"

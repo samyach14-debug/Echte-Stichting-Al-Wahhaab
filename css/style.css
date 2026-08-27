@@ -824,6 +824,7 @@ p:last-child {
 }
 
 .donate-paypal {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -861,6 +862,14 @@ p:last-child {
   border-color: var(--color-primary-dark);
   color: var(--color-white);
   transform: translateY(-1px);
+}
+
+.donate-paypal__pixel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .donate-paypal__cards {
