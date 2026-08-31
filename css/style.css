@@ -386,6 +386,9 @@ p:last-child {
   box-shadow: var(--shadow-lg);
   aspect-ratio: 4 / 3;
   background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero__image img,
@@ -399,6 +402,7 @@ p:last-child {
 
 .hero__image--contain img {
   object-fit: contain;
+  object-position: center;
 }
 
 .hero--compact {
@@ -531,6 +535,7 @@ p:last-child {
 /* Optioneel: vullend kader voor foto's (voeg --cover toe aan de container) */
 .project-card__image--cover img {
   object-fit: cover;
+  object-position: center;
 }
 
 /* Posters/flyers: volledige afbeelding zichtbaar (voeg --poster toe aan de container) */
